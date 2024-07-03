@@ -1,0 +1,17 @@
+syntax = "proto3";
+package pepe.pepe;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "pepe/pepe/params.proto";
+
+option go_package = "pepe/x/pepe/types";
+
+// GenesisState defines the pepe module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package pepe.pepe;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "pepe/x/pepe/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "pepe/x/pepe/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
