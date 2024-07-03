@@ -3,17 +3,20 @@ validation: sovereign
 accounts: 
 - name: alice
   coins:
-  - 200000000ununa
+  - 10000token
+  - 200000000stake
 - name: bob
   coins:
-  - 100000000ununa
+  - 10000token
+  - 100000000stake
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
   name: bob
   coins:
-  - 100000ununa
+  - 5token
+  - 100000stake
 validators:
 - name: alice
-  bonded: 100000000ununa
+  bonded: 100000000stake
